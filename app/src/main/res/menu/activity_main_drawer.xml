@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black"
+            android:title="Головна" />
+
+        <item
+            android:id="@+id/nav_web"
+            android:icon="@drawable/ic_nure_gray"
+            android:title="NURE UA" />
+        <item
+            android:id="@+id/nav_inure"
+            android:icon="@drawable/ic_inure_gray"
+            android:title="I-NURE" />
+        <item
+            android:id="@+id/nav_fm"
+            android:icon="@drawable/ic_nurefm_gray"
+            android:title="NURE FM" />
+        <item
+            android:id="@+id/nav_youtube"
+            android:icon="@drawable/ic_live_tv_black"
+            android:title="NURE TV" />
+        <item
+            android:id="@+id/nav_kaf"
+            android:icon="@drawable/ic_kaf2_black"
+            android:title="Кафедри" />
+
+        <item
+            android:id="@+id/rating"
+            android:icon="@drawable/ic_ball_star"
+            android:title="Рейтинговий бал" />
+        <item
+            android:id="@+id/nav_park"
+            android:icon="@drawable/ic_synergy_gray"
+            android:title="Science Park" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map_black"
+            android:title="Карта" />
+
+    </group>
+
+</menu>
