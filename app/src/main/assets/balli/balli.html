@@ -1,0 +1,323 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="back2"> background 2 </div>
+<p class="header">Розрахунок рейтингу</p>
+<span class="result" id="result">Ваш бал</span>
+<div class="back">
+<p class="title">I предмет</p>
+<div id="title1" class="options" >Кредитів:
+
+<input type="number" id="kredit1" class="input" size="3"></input>
+Балів:
+<input type="number" id="text1" class="input" size="3"></input>
+
+
+
+<p class="title">II предмет</p>Кредитів:
+<input type="number" id="kredit2" class="input" size="3"></input>
+Балів:
+<input type="number" id="text2" class="input" size="3"></input>
+
+
+<p class="title">III предмет</p>Кредитів:
+<input type="number" id="kredit3" class="input" size="3"></input>
+Балів:
+<input type="number" id="text3" class="input" size="3"></input>
+
+
+<p class="title">IV предмет</p>Кредитів:
+<input type="number" id="kredit4" class="input" size="3"></input>
+Балів:
+<input type="number" id="text4" class="input" size="3"></input>
+
+
+<p class="title">V предмет</p>Кредитів:
+<input type="number" id="kredit5" class="input" size="3"></input>
+Балів:
+<input type="number" id="text5" class="input" size="3"></input>
+
+
+<p class="title">VI предмет</p>Кредитів:
+<input type="number" id="kredit6" class="input" size="3"></input>
+Балів:
+<input type="number" id="text6" class="input" size="3"></input>
+
+
+<p class="title">VII предмет</p>Кредитів:
+<input type="number" id="kredit7" class="input" size="3"></input>
+Балів:
+<input type="number" id="text7" class="input" size="3"></input>
+
+
+<p class="title">VIII предмет</p>Кредитів:
+<input type="number" id="kredit8" class="input" size="3"></input>
+Балів:
+<input type="number" id="text8" class="input" size="3"></input>
+
+<p class="title">IX предмет</p>Кредитів:
+<input type="number" id="kredit9" class="input" size="3"></input>
+Балів:
+<input type="number" id="text9" class="input" size="3"></input>
+
+<p class="title">X предмет</p>Кредитів:
+<input type="number" id="kredit10" class="input" size="3"></input>
+Балів:
+<input type="number" id="text10" class="input" size="3"></input>
+
+<p class="title">XI предмет</p>Кредитів:
+<input type="number" id="kredit11" class="input" size="3"></input>
+Балів:
+<input type="number" id="text11" class="input" size="3"></input>
+
+<p class="title">XII предмет</p>Кредитів:
+<input type="number" id="kredit12" class="input" size="3"></input>
+Балів:
+<input type="number" id="text12" class="input" size="3"></input>
+
+<p class="title" >Доп. баллы</p>
+
+
+<input type="number" id="dtext1" class="input" placeholder="0-40" style="margin-bottom:20%; width:65%"></input> <br><br>
+
+
+</div>
+<br>
+
+<br>
+</div>
+
+		<script>
+		
+			function GetSelectedValue(){
+				
+				var text1 = document.getElementById("text1").value;
+				var result1 = document.getElementById("kredit1").value ;
+								
+				var text2 = document.getElementById("text2").value;
+				var result2 = document.getElementById("kredit2").value ;
+
+			
+				var text3 = document.getElementById("text3").value;
+				var result3 = document.getElementById("kredit3").value ;
+
+				var text4 = document.getElementById("text4").value;
+				var result4 = document.getElementById("kredit4").value ;
+
+				var text5 = document.getElementById("text5").value;
+				var result5 = document.getElementById("kredit5").value ;
+
+				var text6 = document.getElementById("text6").value;
+				var result6 = document.getElementById("kredit6").value ;
+
+				var text7 = document.getElementById("text7").value;
+				var result7 = document.getElementById("kredit7").value ;
+
+				var text8 = document.getElementById("text8").value;
+				var result8 = document.getElementById("kredit8").value ;
+				
+				var text9 = document.getElementById("text9").value;
+				var result9 = document.getElementById("kredit9").value ;
+
+				var text10 = document.getElementById("text10").value;
+				var result10 = document.getElementById("kredit10").value ;
+
+				var text11 = document.getElementById("text11").value;
+				var result11 = document.getElementById("kredit11").value ;
+
+				var text12 = document.getElementById("text12").value;
+				var result12 = document.getElementById("kredit12").value ;
+
+				var dtext1 = document.getElementById("dtext1").value;
+
+
+				if(text1 > 100){
+					text1 = 100;}
+				else{
+					text1 = text1;
+				}
+
+				if(text2 > 100){
+					text2 = 100;}
+				else{
+					text2 = text2;
+				}
+
+				if(text3 > 100){
+					text3 = 100;}
+				else{
+					text3 = text3;
+				}
+
+				if(text4 > 100){
+					text4 = 100;}
+				else{
+					text4 = text4;
+				}
+
+				if(text5 > 100){
+					text5 = 100;}
+				else{
+					text5 = text5;
+				}
+
+				if(text6 > 100){
+					text6 = 100;}
+				else{
+					text6 = text6;
+				}
+
+				if(text7 > 100){
+					text7 = 100;}
+				else{
+					text7 = text7;
+				}
+
+				if(text8 > 100){
+					text8 = 100;}
+				else{
+					text8 = text8;
+				}
+
+				if(text9 > 100){
+					text9 = 100;}
+				else{
+					text9 = text9;
+				}
+
+				if(text10 > 100){
+					text10 = 100;}
+				else{
+					text10 = text10;
+				}
+
+				if(text11 > 100){
+					text11 = 100;}
+				else{
+					text11 = text11;
+				}
+
+				if(text12 > 100){
+					text12 = 100;}
+				else{
+					text12 = text12;
+				}
+
+
+				if(text1 == 0){
+					result1 = 0;}
+				else{
+					result1 = result1;
+				};
+
+				if(text2 == 0){
+					result2 = 0;}
+				else{
+					result2 = result2;
+				};
+
+				if(text3 == 0){
+					result3 = 0;}
+				else{
+					result3 = result3;
+				};
+
+				if(text4 == 0){
+					result4 = 0;}
+				else{
+					result4 = result4;
+				};
+
+				if(text5 == 0){
+					result5 = 0;}
+				else{
+					result5 = result5;
+				};
+
+				if(text6 == 0){
+					result6 = 0;}
+				else{
+					result6 = result6;
+				};
+
+				if(text7 == 0){
+					result7 = 0;}
+				else{
+					result7 = result7;
+				};
+
+				if(text8 == 0){
+					result8 = 0;}
+				else{
+					result8 = result8;
+				};
+
+				if(text9 == 0){
+					result9 = 0;}
+				else{
+					result9 = result9;
+				};
+
+				if(text10 == 0){
+					result10 = 0;}
+				else{
+					result10 = result10;
+				};
+
+				if(text11 == 0){
+					result11 = 0;}
+				else{
+					result11 = result11;
+				};
+
+				if(text12 == 0){
+					result12 = 0;}
+				else{
+					result12 = result12;
+				};
+
+
+
+				var kreditsumm = result1*1 + result2*1 + result3*1 + result4*1 + result5*1 + result6*1 + result7*1 + result8*1 + result9*1 + result10*1 + result11*1 + result12*1;
+				
+				var dop = dtext1*1;
+				if(dop > 40){
+				dop = 40;
+				}
+				else{
+				dop = dop;}
+				
+				var result = ((text1 * result1 + text2 * result2 + text3 * result3 + text4 * result4 + text5 * result5 + text6 * result6 + text7 * result7 + text8 * result8 + text9 * result9 + text10 * result10 + text11 * result11 + text12 * result12)/kreditsumm)*0.9 +( dop * 0.25);
+				if(kreditsumm==0){
+				result = "0";}
+				else{
+				result=result;
+				};
+				document.getElementById("result").innerHTML = result.toFixed(3);
+			}
+
+ /* var new_chq_no = parseInt($('#total_chq').val()) + 1;
+  var new_input = "<input type='text' id='new_" + new_chq_no + "'>";
+  $('#new_chq').html(new_input);
+}
+
+function remove() {
+  var last_chq_no = $('#total_chq').val();
+  if (last_chq_no > 1) {
+    $('#new_' + last_chq_no).append('');
+    $('#total_chq').val(last_chq_no - 1);
+  }
+}
+*/
+		</script>
+
+		<br/>
+		<br/>
+		<button type="button" class="button" onclick="GetSelectedValue()"><span style="font-family: 'Montserrat'">Розрахувати</span></button>
+	
+	</body>
+
+</html>
