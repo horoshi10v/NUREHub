@@ -5,11 +5,8 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.text.Html;
-import android.text.method.LinkMovementMethod;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,9 +16,8 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 
-import com.nure.hub.R;
+
 
 
 /**
@@ -100,7 +96,7 @@ public class MapFragment extends Fragment {
         });*/
 
 
-        final Button fab = (Button)v.findViewById(R.id.fab);
+        final Button fab = v.findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

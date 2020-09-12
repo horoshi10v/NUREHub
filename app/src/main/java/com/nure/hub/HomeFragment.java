@@ -28,7 +28,7 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         ((MainActivity)getActivity()).setActionBarTitle("Головна");
         View v = inflater.inflate(R.layout.fragment_home, container, false);
-        WebView webView = (WebView)v.findViewById(R.id.webH);
+        WebView webView = v.findViewById(R.id.webH);
         webView.loadUrl("file:///android_asset/home/index.html");
         WebSettings webSettings = webView.getSettings();
         webSettings.setDomStorageEnabled(true);
@@ -37,6 +37,8 @@ public class HomeFragment extends Fragment {
         webSettings.setUseWideViewPort(true);
         webSettings.setBuiltInZoomControls(true); webSettings.setDisplayZoomControls(false); //убрать это и низ для инсты
         webSettings.setSupportZoom(true); //webSettings.setDefaultTextEncodingName("utf-8");
+
+
         return v;
     }
 
