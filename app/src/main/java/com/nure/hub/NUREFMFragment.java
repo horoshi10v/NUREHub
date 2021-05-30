@@ -34,7 +34,7 @@ public class NUREFMFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        ((MainActivity)getActivity()).setActionBarTitle("NURE FM");
+        ((MainActivity)getActivity()).setActionBarTitle("DL NURE");
         View v =inflater.inflate(R.layout.fragment_nurefm, container, false);
 
         progressBar = (ProgressBar)v.findViewById(R.id.prgr);
@@ -56,7 +56,7 @@ public class NUREFMFragment extends Fragment {
                 progressBar.setVisibility(View.GONE);
             }
         });
-        webView.loadUrl("http://fm.nure.ua/phone/index.html");
+        webView.loadUrl("https://dl.nure.ua/");
         webView.getSettings().setJavaScriptEnabled(true);
         WebSettings webSettings = webView.getSettings();
         webSettings.setDomStorageEnabled(true);

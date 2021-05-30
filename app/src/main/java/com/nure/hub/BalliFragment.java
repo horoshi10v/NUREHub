@@ -23,7 +23,7 @@ public class BalliFragment extends Fragment {
 
         ((MainActivity)getActivity()).setActionBarTitle("Рейтинговий бал");
         View v = inflater.inflate(R.layout.fragment_balli, container, false);
-        WebView webView = v.findViewById(R.id.webB);
+        WebView webView = (WebView)v.findViewById(R.id.webB);
         webView.loadUrl("file:///android_asset/balli/balli.html");
         WebSettings webSettings = webView.getSettings();
         webSettings.setDomStorageEnabled(true);
