@@ -1,23 +1,17 @@
 package com.nure.hub;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
-
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-
-
-import com.nure.hub.R;
-
 import java.util.Objects;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -68,7 +62,6 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -87,9 +80,9 @@ public class MainActivity extends AppCompatActivity
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.flMain, new INUREFragment());
             ft.commit();
-        } else if (id == R.id.nav_fm) {
+        } else if (id == R.id.nav_dl) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.flMain, new NUREFMFragment());
+            ft.replace(R.id.flMain, new NUREDLFragment());
             ft.commit();
         }   else if (id == R.id.nav_map) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
@@ -109,11 +102,10 @@ public class MainActivity extends AppCompatActivity
             ft.commit();
         }
 
-
-
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+
     }
 
 

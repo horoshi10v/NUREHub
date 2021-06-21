@@ -18,13 +18,9 @@
             android:icon="@drawable/ic_inure_gray"
             android:title="I-NURE" />
         <item
-            android:id="@+id/nav_fm"
+            android:id="@+id/nav_dl"
             android:icon="@drawable/ic_nure_gray"
             android:title="DL NURE" />
-        <!--<item
-            android:id="@+id/nav_youtube"
-            android:icon="@drawable/ic_live_tv_black"
-            android:title="NURE TV" />-->
         <item
             android:id="@+id/nav_kaf"
             android:icon="@drawable/ic_kaf2_black"

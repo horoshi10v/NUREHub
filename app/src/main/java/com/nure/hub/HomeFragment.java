@@ -9,8 +9,6 @@ import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-import com.nure.hub.R;
-
 
 /**
  * A simple {@link Fragment} subclass.
@@ -33,10 +31,10 @@ public class HomeFragment extends Fragment {
         WebSettings webSettings = webView.getSettings();
         webSettings.setDomStorageEnabled(true);
         webSettings.setJavaScriptEnabled(true);
-        webSettings.setLoadWithOverviewMode(true); //растягивает
+        webSettings.setLoadWithOverviewMode(true);
         webSettings.setUseWideViewPort(true);
-        webSettings.setBuiltInZoomControls(true); webSettings.setDisplayZoomControls(false); //убрать это и низ для инсты
-        webSettings.setSupportZoom(true); //webSettings.setDefaultTextEncodingName("utf-8");
+        webSettings.setBuiltInZoomControls(true); webSettings.setDisplayZoomControls(false);
+        webSettings.setSupportZoom(true);
         return v;
     }
 

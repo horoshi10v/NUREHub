@@ -61,7 +61,7 @@ public class WEBFragment extends Fragment {
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true); webSettings.setDomStorageEnabled(true);
         webSettings.setLoadWithOverviewMode(true); webSettings.setUseWideViewPort(true);
-        webSettings.setBuiltInZoomControls(true); webSettings.setDisplayZoomControls(false); //убрать это и низ для инсты
+        webSettings.setBuiltInZoomControls(true); webSettings.setDisplayZoomControls(false);
         webSettings.setSupportZoom(true); //webSettings.setDefaultTextEncodingName("utf-8");
         webSettings.setAllowFileAccess(true);
 

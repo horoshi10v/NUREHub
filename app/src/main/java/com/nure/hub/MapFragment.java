@@ -69,7 +69,7 @@ public class MapFragment extends Fragment {
         webSettings.setLoadWithOverviewMode(false);
         webSettings.setUseWideViewPort(true);
         webSettings.setBuiltInZoomControls(true);
-        webSettings.setDisplayZoomControls(false); //убрать это и низ для инсты
+        webSettings.setDisplayZoomControls(false);
         webSettings.setSupportZoom(false); //webSettings.setDefaultTextEncodingName("utf-8");
 
         webView.setOnKeyListener(new View.OnKeyListener() {
@@ -88,17 +88,6 @@ public class MapFragment extends Fragment {
                 return false;
             }
         });
-
-
-       /*Button fab = (Button)v.findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Карта заходиться в розробці. Для зауваженнь та пропозицій писати  в Telegram: @georgesvitenko ", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });*/
-
 
         final Button fab = (Button)v.findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

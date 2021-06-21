@@ -35,7 +35,7 @@ public class KafFragment extends Fragment {
         webSettings.setDomStorageEnabled(true);
         webSettings.setLoadWithOverviewMode(true); //растягивает
         webSettings.setUseWideViewPort(true);
-        webSettings.setBuiltInZoomControls(true); webSettings.setDisplayZoomControls(false); //убрать это и низ для инсты
+        webSettings.setBuiltInZoomControls(true); webSettings.setDisplayZoomControls(false);
         webSettings.setSupportZoom(true); //webSettings.setDefaultTextEncodingName("utf-8");
         return v;
     }
