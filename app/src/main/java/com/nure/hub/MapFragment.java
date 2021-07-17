@@ -96,7 +96,9 @@ public class MapFragment extends Fragment {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
                 builder.setTitle("Увага!")
 
-                        .setMessage(Html.fromHtml("Карта заходиться в розробці. Для зауваженнь та пропозицій писати  в "+"<b>"+"Telegram:"+"</b>  <a href=\"https://t.me/georgesvitenko \">@georgesvitenko</a>"))
+                        .setMessage(Html.fromHtml("Карта заходиться в розробці. " +
+                                "Для зауваженнь та пропозицій писати  в "+"<b>"+"Telegram:"+
+                                "</b>  <a href=\"https://t.me/georgesvitenko \">@georgesvitenko</a>"))
 
                         .setCancelable(false)
 

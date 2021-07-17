@@ -22,22 +22,18 @@ import android.widget.ProgressBar;
 public class INUREFragment extends Fragment {
 
     public ProgressBar progressBar;
-    public INUREFragment() {
-
-    }
-
-
+    public INUREFragment() {}
     @Override
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         ((MainActivity)getActivity()).setActionBarTitle("I-NURE");
         View v = inflater.inflate(R.layout.fragment_inure, container, false);
 
         progressBar = (ProgressBar)v.findViewById(R.id.prgi);
         WebView webView = (WebView)v.findViewById(R.id.web1);
         webView.getSettings().setJavaScriptEnabled(true);
-
 
         webView.setWebViewClient(new WebViewClient(){
             @Override
@@ -51,6 +47,7 @@ public class INUREFragment extends Fragment {
                 super.onPageFinished(view, url);
                 progressBar.setVisibility(View.GONE);
             }
+
         });
 
 
@@ -62,7 +59,15 @@ public class INUREFragment extends Fragment {
         webSettings.setSupportZoom(true); webSettings.setDefaultTextEncodingName("utf-8");
 
         webView.setOnKeyListener(new OnKeyListener() {
-            public boolean onKey(View v, int keyCode, KeyEvent event) { if(event.getAction() == KeyEvent.ACTION_DOWN) { WebView webView = (WebView) v; switch(keyCode) { case KeyEvent.KEYCODE_BACK: if(webView.canGoBack()) { webView.goBack(); return true; } break; } } return false; } });
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if(event.getAction() == KeyEvent.ACTION_DOWN) {
+                    WebView webView = (WebView) v; switch(keyCode) {
+                        case KeyEvent.KEYCODE_BACK: if(webView.canGoBack()) {
+                            webView.goBack();
+                            return true; }
+                            break; } }
+                return false; } });
+
 
         return v;
     }
